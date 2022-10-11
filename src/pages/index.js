@@ -9,7 +9,7 @@ export default function Home({countries}) {
     <div className={styles.counts}>
       Found {countries.length} countries
 
-      <SearchInput />
+      {/* <SearchInput /> */}
     </div>
   </Layout>;
 }
