@@ -6,8 +6,10 @@ import styles from '../styles/Home.module.css';
 export default function Home({countries}) {
   console.log(countries);
   return <Layout>
-    <div>
+    <div className={styles.counts}>
       Found {countries.length} countries
+
+      <SearchInput />
     </div>
   </Layout>;
 }
