@@ -12,6 +12,17 @@
   --font-family: "Poppins", sans-serif;
   --box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
 }
+
+[data-theme="dark"] {
+  --text-color:#f0f0f0;
+  --text-color-secondary: #b3c5cd;
+
+  --primary-color: #21b6b7;
+
+  --background-color: #252329;
+  --background-color-light: #3c393f;
+  --background-color-dark: #120f13;
+}
 html,
 body {
   padding: 0;
@@ -34,10 +45,9 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
   body {
-    color: white;
-    background: black;
+    background-color:var(--background-color-light) !important;
   }
 }
